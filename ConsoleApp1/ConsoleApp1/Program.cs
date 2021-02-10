@@ -10,6 +10,175 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //Task 3
+            /*
+            Console.WriteLine("use cycles \"for\",  \"while\",  \"foreach\", \"do while\" Cycle operators ");
+            Console.WriteLine("\nCreate for, while, do while cycles that iterate 10 times and print iteration number to console. ");
+
+            Console.WriteLine("\nfor");
+            for (int a = 0; a < 10; a++)
+            {
+                Console.WriteLine(a);
+            }
+
+            Console.WriteLine("\nwhile");
+            int w = 0;
+            while(w < 10)
+            {
+                Console.WriteLine(w);
+                w++;
+            }
+
+            Console.WriteLine("\ndo while");
+            int d = 0;
+            do
+            {
+                Console.WriteLine(d);
+                d++;
+            }
+            while (d < 10);
+
+            Console.WriteLine("\nforeach");
+
+            byte[] myYear = { 1, 9, 9, 2 };
+            foreach (byte year in myYear)
+            {
+                Console.WriteLine(year);
+            }
+
+            Console.WriteLine("\nCreate recursion with exit condition");
+
+            int factorial(int n)
+            {
+                if (n == 0)
+                    return 1;
+                else
+                    return n * factorial(n - 1);
+            }
+            
+            Console.WriteLine(factorial(5));
+            */
+            /*Console.WriteLine("\nCreate recursion without exit condition");
+
+            int factorialTwo(int n)
+            {
+                if (n == 0)
+                    return 1;
+                else
+                    return n * factorialTwo(n);
+            }
+
+            Console.WriteLine(factorialTwo(1));*/
+
+            //Console.WriteLine("\nCreate an infinite loop.");
+            //
+            //for (int a = 0; a > -1; a++)
+            //{
+            //    Console.WriteLine(a);
+            //}
+
+
+
+            ////Task 2
+            //
+            //Console.WriteLine("use conditions \"if\" and  \"switch case\"Create 4 boolean variables(true,true,false,false) and compare them between themselves");
+            //
+            //var trueOne = true;
+            //var trueTwo = true;
+            //var falseOne = false;
+            //var falseTwo = false;
+            //
+            //
+            //Console.WriteLine("If statement");
+            //if (trueOne == trueTwo)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
+            //if (trueOne == falseOne)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
+            //if (falseOne == trueOne)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
+            //if (falseOne == falseTwo)
+            //{
+            //    Console.WriteLine("True");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False");
+            //}
+            //
+            //Console.WriteLine("\nSwitch case statement");
+            //
+            //bool resultOne = trueOne == trueTwo ? true : false;
+            //switch (resultOne)
+            //{
+            //    case true:
+            //        Console.WriteLine("True");
+            //        break;
+            //    case false:
+            //        Console.WriteLine("False");
+            //        break;
+            //}
+            //bool resultTwo = trueOne == falseOne ? true : false;
+            //switch (resultTwo)
+            //{
+            //    case true:
+            //        Console.WriteLine("True");
+            //        break;
+            //    case false:
+            //        Console.WriteLine("False");
+            //        break;
+            //}
+            //
+            //Console.WriteLine("Create 4 different numeric variables and compare them with the usage of <,<=,!=,==,===,>=,>");
+            //int a = 77;
+            //int b = 1000;
+            //int c = -255;
+            //float f = 77.00f;
+            //
+            //Console.WriteLine(a != b);
+            //Console.WriteLine(a == b);
+            //Console.WriteLine(a == f);
+            //Console.WriteLine(b >= c);
+            //Console.WriteLine(a <= f);
+            //Console.WriteLine(a > b);
+            //Console.WriteLine(a >= b);
+            //Console.WriteLine(c < a);
+            //
+            //Console.WriteLine("\nCreate 2 different strings. Compare them with usage if trinar operator and print \"Not equal\", \"Equal\" and explain");
+            //string firstString = "I love milk";
+            //string secondString = "I don't love milk";
+            //Console.WriteLine(firstString == secondString ? "Equal" : "Not Equal");
+            //
+            //Console.WriteLine("Explain difference betweeb &&,|| and provide example");
+            //var thisTrue = true;
+            //var thisFalse = false;
+            //Console.WriteLine(thisTrue && thisFalse);
+            //Console.WriteLine(thisTrue || thisFalse);
+            //Console.WriteLine(!(thisTrue && thisFalse));
+            //
+            //Console.WriteLine("\n Create 2 string variables with same value but initialize one with literal \nand another with constructor.(String a =\"lalala\";\" + \"String b = new String(\"lalala\");) Compare this values with usage of == and equal.");
+            //String verbatimString = @"lalala";
+            //String concatString = String.Concat("la", "la", "", "la");
+            //Console.WriteLine(verbatimString = concatString);
+            //Console.WriteLine(verbatimString == concatString);
+            /*Task 1
             // Create 5 variables with type int,long,float,double,String
             int int1;
             long long1;
@@ -52,7 +221,7 @@ namespace ConsoleApp1
             string edge5 = edge4.ToString();
             Console.WriteLine("{0}, {1}, {2}, {3}, {4}", edge1, edge2, edge3, edge4, edge5);*/
 
-            //Assign the same values and compare variables
+            /*//Assign the same values and compare variables
 
             intSame = 1000;
             longSame = 1000;
@@ -83,7 +252,7 @@ namespace ConsoleApp1
 
             // long long1 = Convert.ToInt64(int1);
 
-            //Assign in same order [0.5,0.7,1.0,0.1] values to float and double variables and compare them
+            /*//Assign in same order [0.5,0.7,1.0,0.1] values to float and double variables and compare them
             Console.WriteLine("\nAssign in same order [0.5,0.7,1.0,0.1] values to float and double variables and compare them");
             float numberOne;
             float numberTwo;
@@ -121,6 +290,7 @@ namespace ConsoleApp1
             var roundDouble = doubleN / 3;
             var roundString = double.Parse(stringN) / 3; 
             Console.WriteLine("{0}, {1}, {2}", Math.Round(roundFloat), Math.Round(roundDouble), Math.Round(roundString));
+            */
         }
     }
 }
