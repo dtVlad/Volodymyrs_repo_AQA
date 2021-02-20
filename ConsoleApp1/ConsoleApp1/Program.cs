@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace ConsoleApp1
 {
@@ -10,6 +11,67 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //Task 4
+            /*
+            Console.WriteLine("Create array, lists, dictionaries, ReadOnlyCollection, and tuples.");
+            int[] MyArray = { 1, 2, 3, 4 };
+
+            var MyList = new List<string>() {"Cat", "Dog", "Cow", "Horse" };
+
+            var ROCList = new List<string>() { "Cat", "Dog", "Cow", "Horse" };
+
+            var MyDictionary = new Dictionary<int, string>()
+            {
+                {1, "Ukraine, Poland" },
+                {2, "Europe, Asia" },
+                {3, "Earth, Venus" }
+            };
+
+            ReadOnlyCollection<string> MyROC = new ReadOnlyCollection<string>(ROCList);
+
+            var Me = Tuple.Create(1992, "Vova", "QA", "Lviv", 176.00);
+
+            Console.WriteLine("Try to use them in methods: Add, Remove, Find element");
+
+            Console.WriteLine("Add");
+
+            MyList.Add("Pony");
+            foreach (var Animals in MyList)
+            Console.WriteLine(Animals);
+
+            MyDictionary.Add(4, "Milky Way, Sombrero Galaxy");
+            string NewDictionaryItem = MyDictionary[4];
+            Console.WriteLine(NewDictionaryItem);
+
+            Console.WriteLine("Remove");
+            MyList.Remove("Cow");
+            foreach (var Animals in MyList)
+            Console.WriteLine(Animals);
+
+            MyDictionary.Remove(3);
+            foreach(KeyValuePair<int, string> kvp in MyDictionary)
+            Console.WriteLine(kvp);
+
+            Console.WriteLine("Find element");
+
+            if (MyDictionary.ContainsKey(1))
+            {
+                Console.WriteLine("Ukraine, Poland");
+            }
+
+            var FindArray = new string[3] { "Car", "Train", "Boat" };
+
+
+            string FindEl = Array.Find(FindArray, ele => ele.StartsWith("B",
+            StringComparison.Ordinal));
+            Console.WriteLine(FindEl);*/
+
+            /*MyROC.Add("Pony");
+            foreach (var Animals in MyROC)
+                Console.WriteLine(Animals);
+            Error
+            */
+
             //Task 3
             /*
             Console.WriteLine("use cycles \"for\",  \"while\",  \"foreach\", \"do while\" Cycle operators ");
@@ -55,7 +117,7 @@ namespace ConsoleApp1
                 else
                     return n * factorial(n - 1);
             }
-            
+
             Console.WriteLine(factorial(5));
             */
             /*Console.WriteLine("\nCreate recursion without exit condition");
