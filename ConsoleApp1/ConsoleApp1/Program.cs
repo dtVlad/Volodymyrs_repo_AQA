@@ -11,54 +11,6 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Task 5
-
-            Console.WriteLine("Use \"try catch\"  to process the exceptions. Check Exception Hierarchy.");
-
-            try
-            {
-                throw new InvalidOperationException("Logfile cannot be read-only");
-            }
-            catch(InvalidOperationException)
-            {
-                Console.WriteLine("Exception processed");
-            }
-
-            Console.WriteLine("Create a numeric variable. Divide it by zero. " +
-                "Handle exception and print in console exception message;");
-            try
-            {
-                var a = 10;
-                Console.WriteLine(a / 0);
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            Console.WriteLine("Throw exception with the original call stack and with new call stack");
-            try
-            {
-                var b = 10;
-                Console.WriteLine(b / 0);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-
-            Console.WriteLine("\nStackTrace\n");
-            try
-            {
-                var b = 10;
-                Console.WriteLine(b / 0);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.StackTrace);
-            }
-
-
             //Task 4
             /*
             Console.WriteLine("Create array, lists, dictionaries, ReadOnlyCollection, and tuples.");
@@ -116,7 +68,7 @@ namespace ConsoleApp1
 
             /*MyROC.Add("Pony");
             foreach (var Animals in MyROC)
-            Console.WriteLine(Animals);
+                Console.WriteLine(Animals);
             Error
             */
 
