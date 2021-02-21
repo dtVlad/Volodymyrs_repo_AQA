@@ -13,8 +13,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Task 7
+            //Task 8
 
+            Console.WriteLine("STRINGS: StringBuilder - create, edit, available functions");
+
+            var builder = new StringBuilder("Hello World!");
+            builder.AppendLine()
+                   .AppendFormat("Tom")
+                   .AppendLine()
+                   .Append('A', 10)
+                   .AppendLine()
+                   .AppendFormat("This is a tail about a brave IT Knight")
+                   .Replace('i', 'I')
+                   .AppendLine()
+                   .Append('B', 10)
+                   .Remove(75, 3)
+                   .Insert(19, "is a proffessor in Cambridge University\n");
+
+
+            Console.WriteLine(builder);
+
+
+            //Task 7
+            /*
             Console.WriteLine("Create 2 different strings.  Concatenate them and print result. " +
                 "Explain what types of concatenation exists.");
             string a = "America is not a country, but a continet";
