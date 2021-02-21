@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace ConsoleApp1
 {
@@ -12,31 +14,39 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             //Task 6
-
+            
             Console.WriteLine("Create FIle. Set text into file with digits and letters, where digits are in separate line. " +
-                "Read digits from the file and make some math operations with them")
+                "Read digits from the file and make some math operations with them");
 
-            //string path = @"C:\Users\vkorostelov\Desktop\Test files AQA";
+            string[] text = System.IO.File.ReadAllLines(@"C:\Repos AQA\Test files AQA\TestAQA.txt");
 
-            string text = System.IO.File.ReadAllText(@"C:\Users\vkorostelov\Desktop\Test files AQA")
-
-            string a = text;
-            string b = string.Empty;
-            int val;
-
-            for (int i = 0; i < a.Length; i++)
+            var Numbers = new List<int>();
+            foreach (var all in text)
             {
-                if (Char.IsDigit(a[i]))
-                    b += a[i];
+                try
+                {
+                    if (Convert.ToInt32(all) is int)
+                    {
+                        Console.WriteLine(all);
+                        Numbers.Add(Convert.ToInt32(all));
+
+                    }
+                }
+                catch(Exception)
+                {
+                   
+                }
             }
-
-            if (b.Length > 0)
-                val = int.Parse(b);
-
-            Console.WriteLine(b);
+            Console.WriteLine(Numbers.Sum());
+            Console.WriteLine(Numbers[0] - Numbers[3]);
+            Console.WriteLine(Numbers[2] * Numbers[3]);
+            Console.WriteLine(Numbers[0] - Numbers[2]);
+            Console.WriteLine(Numbers[3] / Numbers[2]);
 
             //Task 5
+
             /*
+
             Console.WriteLine("Use \"try catch\"  to process the exceptions. Check Exception Hierarchy.");
 
             try
