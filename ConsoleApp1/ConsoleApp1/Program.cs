@@ -13,8 +13,97 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Task 6
+            //Task 7
+
+            Console.WriteLine("Create 2 different strings.  Concatenate them and print result. " +
+                "Explain what types of concatenation exists.");
+            string a = "America is not a country, but a continet";
+            string b = "I like pizza with salami and chili pepper";
+            string[] c = {"America ", "is ", "not ", "a ", "country, ", "but a continet."};
+            Console.WriteLine(a + "." + " " + b);
+            Console.WriteLine($"{a}. {b}");
+            Console.WriteLine(String.Concat(c));
+
+            Console.WriteLine("\nCreate string \" egweerw  ererferw kuy yu i \". Print its length; " +
+                "Trim string and print result. Print length of trimmed string.");
+
+            string egw1 = "   egweerw  ererferw  kuy  yu i ";
+            Console.WriteLine(egw1);
+            Console.WriteLine(egw1.Length);
+            Console.WriteLine(egw1.Trim());
+            Console.WriteLine(egw1.Trim().Length);
+
+            Console.WriteLine("\nCreate string \" egweerw  ererferw kuy yu i \"." +
+                "Split string by spaces and print each value in separate row. "
+                + "Clean empty spaces form result; Print each result value in a separate row. ");
+
+            string egw2 = "   egweerw  ererferw  kuy  yu i ";
+            string[] egw2Arr = egw2.Split(new string[] {}, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var splW in egw2Arr)
+            {
+                string Modified = splW.Replace("w", "W");
+                Console.WriteLine(Modified);
+            }
+
+            Console.WriteLine("\nConvert all characters to uppercase. Print result");
+
+            string egw3 = "   egweerw  ererferw  kuy  yu i ";
+            string[] egw3Arr = egw3.Split(new string[] { }, StringSplitOptions.RemoveEmptyEntries);
+            foreach (var splW in egw3Arr)
+            {
+
+                if(splW.Contains("w"))
+                {
+                    Console.WriteLine(splW.ToUpper());
+
+                }
+            }
+
+            Console.WriteLine("\nConvert all 'w' to uppercase.Print result");
+
+            string egw4 = "   egweerw  ererferw  kuy  yu i ";
+            string[] egw4Arr = egw4.Split(new string[] { }, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var splW in egw4Arr)
+            {
+
+                string Modified = splW.Replace("w", "W");
+                Console.WriteLine(Modified);
+
+            }
+
+            Console.WriteLine("\nConvert first 'w' to uppercase.");
+
+            string egw5 = "   egweerw  ererferw  kuy  yu i ";
+            string[] egw5Arr = egw5.Split(new string[] { }, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var splW in egw5Arr)
+            {
+
+                var regex = new Regex(Regex.Escape("w"));
+                var Modified2 = regex.Replace(splW, "W", 1);
+                Console.WriteLine(Modified2);
+
+            }
+
+            Console.WriteLine("\nCreate string \"this item previous price $5.99, Sale price $1.99. \" " +
+                "- parse original and sale price from string and print them.");
+
+            string price = "this item previous price $5.99, Sale price $1.99. ";
+            MatchCollection allPrices = Regex.Matches(price, @"[$](\d...)");
+            var pricesSet = new List<string>();
             
+            foreach (var prices in allPrices)
+            {
+                pricesSet.Add(Convert.ToString(prices));    
+            }
+
+            Console.WriteLine("Old price was " + "$" + pricesSet[0]);
+            Console.WriteLine("New price is " + "$" + pricesSet[1]);
+
+            //Task 6
+            /*
             Console.WriteLine("Create FIle. Set text into file with digits and letters, where digits are in separate line. " +
                 "Read digits from the file and make some math operations with them");
 
