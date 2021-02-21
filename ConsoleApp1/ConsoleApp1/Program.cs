@@ -11,8 +11,32 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Task 5
+            //Task 6
 
+            Console.WriteLine("Create FIle. Set text into file with digits and letters, where digits are in separate line. " +
+                "Read digits from the file and make some math operations with them")
+
+            //string path = @"C:\Users\vkorostelov\Desktop\Test files AQA";
+
+            string text = System.IO.File.ReadAllText(@"C:\Users\vkorostelov\Desktop\Test files AQA")
+
+            string a = text;
+            string b = string.Empty;
+            int val;
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (Char.IsDigit(a[i]))
+                    b += a[i];
+            }
+
+            if (b.Length > 0)
+                val = int.Parse(b);
+
+            Console.WriteLine(b);
+
+            //Task 5
+            /*
             Console.WriteLine("Use \"try catch\"  to process the exceptions. Check Exception Hierarchy.");
 
             try
