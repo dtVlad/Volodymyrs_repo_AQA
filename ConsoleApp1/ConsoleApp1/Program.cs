@@ -13,8 +13,92 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Task 8
+            //Basic fixes
+            /*
+            Console.WriteLine("Throw exception with the original call stack and with new call stack");
+            try
+            {
+                var b = 10;
+                Console.WriteLine(b / 0);
+            }
 
+            catch (Exception a)
+            {
+                Console.WriteLine(a);
+            }
+
+            finally
+            {
+
+
+                try
+                {
+                    var b = 10;
+                    Console.WriteLine(b / 0);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Can't divide by 0");
+                }
+
+                finally
+                {
+                    Console.ReadKey();
+                }
+
+            }
+            */
+            //RegEx Task 1
+            /*
+            Console.WriteLine("Create file with different text where IP address is present. " +
+                "Extract it with REGEXP");
+
+            Regex regex = new Regex(@"\b(?:[0-9]{1,3}.){3}[0-9]{1,3}\b");
+
+            string iPlist = System.IO.File.ReadAllText(@"C:\Repos AQA\Test files AQA\RegExIp.txt");
+            MatchCollection matches = regex.Matches(iPlist);
+            
+            foreach (var all in matches)
+            {
+                        Console.WriteLine(all);
+            }
+            */
+            //RegEx Task 2
+
+            Console.WriteLine("create a variable with some string that contains words and numbers; " +
+                "create regex with groups; select a value from one of the groups to some new variable. " +
+                "Take into account that the enumeration of groups starts from 1, not from 0.");
+
+            string Sentence = "In November 1943, Franklin D. Roosevelt and Winston Churchill met with Chiang Kai-shek in Cairo and then with Joseph Stalin in Tehran. The former conference determined the post-war return of Japanese territory and the military planning for the Burma campaign, while the latter included agreement that the Western Allies would invade Europe in 1944 and that the Soviet Union would declare war on Japan within three months of Germany's defeat.";
+
+            Regex regGr = new Regex(@".*?([\sa-zA-Z+][^\d]{1,})([\s\d+][^a-zA-Z+]{1,})?");
+            Match m = regGr.Match(Sentence);
+            
+            while (m.Success)
+            {
+                string group1 = m.Groups[1].Value;
+                string group2 = m.Groups[2].Value;
+                Console.WriteLine("Text group: " + group1);
+                Console.WriteLine("Number group: " + group2);
+                m = m.NextMatch();
+            }
+            /*
+            MatchCollection matches = regGr.Matches(Sentence);
+
+            foreach (Match match in matches)
+            {
+                Console.WriteLine("Text: {0}", match.Groups[1].Value);
+                Console.WriteLine("Numbers: {0}", match.Groups[2].Value);
+                Console.WriteLine();
+            }
+            //Console.WriteLine();
+            
+            
+
+            //Re
+
+            //Task 8
+            /*
             Console.WriteLine("STRINGS: StringBuilder - create, edit, available functions");
 
             var builder = new StringBuilder("Hello World!");
@@ -114,7 +198,7 @@ namespace ConsoleApp1
             string price = "this item previous price $5.99, Sale price $1.99. ";
             MatchCollection allPrices = Regex.Matches(price, @"[$](\d...)");
             var pricesSet = new List<string>();
-            
+
             foreach (var prices in allPrices)
             {
                 pricesSet.Add(Convert.ToString(prices));    
@@ -144,7 +228,7 @@ namespace ConsoleApp1
                 }
                 catch(Exception)
                 {
-                   
+
                 }
             }
             Console.WriteLine(Numbers.Sum());

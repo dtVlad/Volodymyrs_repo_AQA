@@ -1,0 +1,3 @@
+In the most basic network, your router is going to have an IP address like 192.168.0.1, and that will be called the "gateway." You'll see it pop up a lot as you look for the IP addresses of other devices. That typically means your router will use DHCP to assign addresses to devices, where only the last octet changes. So 192.168.0.101, or 192.168.0.102, for example. It depends on the range defined by your router.
+
+This is pretty much the same on all internal networks, because they're hidden behind the router, which routes all that communication in and out to the proper places. If you have a big internal network, another number called a subnet will help divide your network into groups. The subnet mask used by most home networks is 255.255.255.0.
