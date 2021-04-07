@@ -4902,11 +4902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vkorostelov\\source\\repos\\SeleniumTrelloTask\\SeleniumTrelloTask\\SeleniumTrelloTask.csproj",
+      "projectUniqueName": "C:\\Repos AQA\\SeleniumTrelloTask\\SeleniumTrelloTask\\SeleniumTrelloTask.csproj",
       "projectName": "SeleniumTrelloTask",
-      "projectPath": "C:\\Users\\vkorostelov\\source\\repos\\SeleniumTrelloTask\\SeleniumTrelloTask\\SeleniumTrelloTask.csproj",
+      "projectPath": "C:\\Repos AQA\\SeleniumTrelloTask\\SeleniumTrelloTask\\SeleniumTrelloTask.csproj",
       "packagesPath": "C:\\Users\\vkorostelov\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vkorostelov\\source\\repos\\SeleniumTrelloTask\\SeleniumTrelloTask\\obj\\",
+      "outputPath": "C:\\Repos AQA\\SeleniumTrelloTask\\SeleniumTrelloTask\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

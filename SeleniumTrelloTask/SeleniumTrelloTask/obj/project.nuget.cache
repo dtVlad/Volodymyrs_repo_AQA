@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j+1mwI3wCbCUqyqj+k+Ldb8uUPTIxOK1RGFpDd8tRakhmyuLR+/dCSJKf76uGcmW1EXOig2nF5NG7Ux127dtIg==",
+  "dgSpecHash": "dr+8WfZyRQrbfZ/b2dQEwFLtwdqYtJLYCpz7AhbF+6Cz0zBZ+30K8zig47IHpjas6A5NBnh24ze3J39+PDiucg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vkorostelov\\source\\repos\\SeleniumTrelloTask\\SeleniumTrelloTask\\SeleniumTrelloTask.csproj",
+  "projectFilePath": "C:\\Repos AQA\\SeleniumTrelloTask\\SeleniumTrelloTask\\SeleniumTrelloTask.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vkorostelov\\.nuget\\packages\\microsoft.codecoverage\\16.9.1\\microsoft.codecoverage.16.9.1.nupkg.sha512",
     "C:\\Users\\vkorostelov\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
